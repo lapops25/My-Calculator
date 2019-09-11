@@ -1,0 +1,38 @@
+<div class="calc">
+        <div class="top">
+            {{CurrentResult}}
+            <span></span>
+        </div>
+        <div class="page">
+            <div class="one_row">
+                <button class="small">%</button>
+                <button class="small">(</button>
+                <button class="small">)</button>
+                <button (click)="getoperator('/')" class="small colored">/</button>
+            </div>
+            <div class="one_row">
+                <button (click)="calcnumber('7')"class="small">7</button>
+                <button (click)="calcnumber('8')"class="small">8</button>
+                <button (click)="calcnumber('9')"class="small">9</button>
+                <button (click)="getoperator('x')"class="small colored">x</button>
+            </div>
+            <div class="one_row">
+                <button (click)="calcnumber('4')"class="small">4</button>
+                <button (click)="calcnumber('5')"class="small">5</button>
+                <button (click)="calcnumber('6')"class="small">6</button>
+                <button (click)="getoperator('-')"class="small colored">-</button>
+            </div>
+            <div class="one_row">
+                <button (click)="calcnumber('1')"class="small">1</button>
+                <button (click)="calcnumber('2')"class="small">2</button>
+                <button (click)="calcnumber('3')"class="small">3</button>
+                <button (click)="getoperator('+')"class="small colored">+</button>
+            </div>
+            <div class="one_row">
+                <button class="small">Del</button>
+                <button (click)="calcnumber('0')"class="small">0</button>
+                <button (click)="calcnumber('.')"class="small">.</button>
+                <button (click)="getoperator('=')"class="small colored1">=</button>
+            </div>		
+        </div>
+    </div>
